@@ -35,10 +35,10 @@ jobs:
           SNK: ${{ secrets.snk }}
         run: |
           $snk = [Convert]::FromBase64String("$env:SNK")
-          Set-Content "src\TextPrivacy.SensitiveString\SensitiveString.snk" -Value $snk -AsByteStream
+          Set-Content "src\TextPrivacy.SensitiveString.HotChocolate\SensitiveString.HotChocolate.snk" -Value $snk -AsByteStream
 
       - name: Build NuGet Package
-        run: dotnet pack src\TextPrivacy.SensitiveString\TextPrivacy.SensitiveString.csproj --configuration Publish -p:Repository=${{ github.repository }} -p:Branch=${{ env.BRANCH }} -p:Commit=${{ github.sha }}
+        run: dotnet pack src\TextPrivacy.SensitiveString.HotChocolate\TextPrivacy.SensitiveString.HotChocolate.csproj --configuration Publish -p:Repository=${{ github.repository }} -p:Branch=${{ env.BRANCH }} -p:Commit=${{ github.sha }}
 
       - name: Publish NuGet Package
-        run: dotnet nuget push src\TextPrivacy.SensitiveString\bin\Publish\SensitiveString.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.nuget_api_key }}
+        run: dotnet nuget push src\TextPrivacy.SensitiveString.HotChocolate\bin\Publish\SensitiveString.HotChocolate.*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.nuget_api_key }}
