@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextPrivacy.SensitiveString
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{21EB174C-CED8-40DB-AD4E-E3BF9D9D3EC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextPrivacy.SensitiveString.HotChocolate.Examples", "src\TextPrivacy.SensitiveString.HotChocolate.Examples\TextPrivacy.SensitiveString.HotChocolate.Examples.csproj", "{D9513782-056F-4A90-8DC4-986DB0B4D492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,8 +16,13 @@ Global
 		{EA5EA98A-75F8-422F-8858-F9857075584E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5EA98A-75F8-422F-8858-F9857075584E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5EA98A-75F8-422F-8858-F9857075584E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9513782-056F-4A90-8DC4-986DB0B4D492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9513782-056F-4A90-8DC4-986DB0B4D492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9513782-056F-4A90-8DC4-986DB0B4D492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9513782-056F-4A90-8DC4-986DB0B4D492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EA5EA98A-75F8-422F-8858-F9857075584E} = {21EB174C-CED8-40DB-AD4E-E3BF9D9D3EC7}
+		{D9513782-056F-4A90-8DC4-986DB0B4D492} = {21EB174C-CED8-40DB-AD4E-E3BF9D9D3EC7}
 	EndGlobalSection
 EndGlobal

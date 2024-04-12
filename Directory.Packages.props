@@ -4,8 +4,8 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="SensitiveString" Version="0.1.1" />
-    <PackageVersion Include="HotChocolate" Version="13.9.0" />
     <PackageVersion Include="HotChocolate.Data" Version="13.9.0" />
+    <PackageVersion Include="HotChocolate.Diagnostics" Version="13.9.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="SauceControl.InheritDoc" Version="2.0.1">
       <PrivateAssets>all</PrivateAssets>

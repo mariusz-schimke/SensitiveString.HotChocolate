@@ -6,15 +6,17 @@ This package extends [SensitiveString](https://www.nuget.org/packages/SensitiveS
 ## Example
 
 ```c#
-using Microsoft.HotChocolate;
+using HotChocolate.Data;
 using TextPrivacy.SensitiveString.HotChocolate;
 
-public class MyDbContext : DbContext
-{
-    protected override void ConfigureConventions(ModelConfigurationBuilder builder)
-    {
-        base.ConfigureConventions(builder);
-        builder.AddSensitiveStringSupport();
-    }
-}
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services
+   .AddGraphQLServer()
+   .AddFiltering(c => c.AddDefaults()
+       .AddSensitiveStringSupport()
+    )
+   .AddSorting(c => c.AddDefaults()
+       .AddSensitiveStringSupport()
+    );
 ```
