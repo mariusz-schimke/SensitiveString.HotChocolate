@@ -19,13 +19,13 @@
 
       <Deterministic>true</Deterministic>
 
-      <Version>0.1.2</Version>
+      <Version>0.1.3</Version>
       <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
 
       <PackageId>SensitiveString.HotChocolate</PackageId>
       <Title>SensitiveString.HotChocolate</Title>
       <Product>SensitiveString.HotChocolate</Product>
-      <Description>This package extends SensitiveString to seamlessly integrate it with HotChocolate, so it can be used in inputs and responses.</Description>
+      <Description>This package extends SensitiveString to integrate it with HotChocolate so it can be used in inputs and responses.</Description>
       <Authors>Mariusz Schimke</Authors>
       <Copyright>Copyright © 2024 Mariusz Schimke</Copyright>
       <PackageTags>sensitive strings privacy graphql hotchocolate</PackageTags>
