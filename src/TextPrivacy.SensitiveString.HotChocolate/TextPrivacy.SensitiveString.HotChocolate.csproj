@@ -2,8 +2,6 @@
   <ItemGroup>
     <PackageReference Include="HotChocolate" />
     <PackageReference Include="HotChocolate.Data" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TextPrivacy.SensitiveString\TextPrivacy.SensitiveString.csproj" />
+    <PackageReference Include="SensitiveString" />
   </ItemGroup>
 </Project>
