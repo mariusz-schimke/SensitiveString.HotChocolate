@@ -19,7 +19,7 @@
 
       <Deterministic>true</Deterministic>
 
-      <Version>0.1.1</Version>
+      <Version>0.1.2</Version>
       <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
 
       <PackageId>SensitiveString.HotChocolate</PackageId>
@@ -43,7 +43,9 @@
       <RepositoryBranch>$(Branch)</RepositoryBranch>
       <RepositoryCommit>$(Commit)</RepositoryCommit>
 
-      <PackageReleaseNotes>This is an initial package release. All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
+      <PackageReleaseNotes>Minimum dependency versions have been reduced.
+
+This is an initial package release. All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
 
 See also https://github.com/$(Repository)/releases</PackageReleaseNotes>
     </PropertyGroup>
