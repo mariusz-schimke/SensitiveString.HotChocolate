@@ -3,7 +3,7 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="SensitiveString" Version="0.1.3" />
+    <PackageVersion Include="SensitiveString" Version="0.1.5" />
     <PackageVersion Include="HotChocolate.Data" Version="13.0.0" />
     <PackageVersion Include="HotChocolate.Diagnostics" Version="13.0.0" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
