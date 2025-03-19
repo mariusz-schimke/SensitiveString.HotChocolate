@@ -1,6 +1,7 @@
 using HotChocolate.Data.Filters;
 using HotChocolate.Data.Sorting;
 using HotChocolate.Execution.Configuration;
+using HotChocolate.Pagination.Serialization;
 using HotChocolate.Types;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -20,8 +21,8 @@ public static class SensitiveStringExtensions
     public static IFilterConventionDescriptor AddSensitiveStringSupport(this IFilterConventionDescriptor descriptor)
     {
         descriptor
-           .BindRuntimeType<SensitiveString, StringOperationFilterInputType>()
-           .BindRuntimeType<SensitiveEmail, StringOperationFilterInputType>();
+            .BindRuntimeType<SensitiveString, StringOperationFilterInputType>()
+            .BindRuntimeType<SensitiveEmail, StringOperationFilterInputType>();
         return descriptor;
     }
 
@@ -37,8 +38,8 @@ public static class SensitiveStringExtensions
     public static ISortConventionDescriptor AddSensitiveStringSupport(this ISortConventionDescriptor descriptor)
     {
         descriptor
-           .BindRuntimeType<SensitiveString, DefaultSortEnumType>()
-           .BindRuntimeType<SensitiveEmail, DefaultSortEnumType>();
+            .BindRuntimeType<SensitiveString, DefaultSortEnumType>()
+            .BindRuntimeType<SensitiveEmail, DefaultSortEnumType>();
         return descriptor;
     }
 
@@ -51,12 +52,16 @@ public static class SensitiveStringExtensions
     public static IRequestExecutorBuilder AddSensitiveStringSupport(this IRequestExecutorBuilder builder)
     {
         builder.BindRuntimeType<SensitiveString, StringType>()
-           .AddTypeConverter<SensitiveString, string>(x => (string) x)
-           .AddTypeConverter<string, SensitiveString>(x => x.AsSensitive());
+            .AddTypeConverter<SensitiveString, string>(x => (string) x)
+            .AddTypeConverter<string, SensitiveString>(x => x.AsSensitive());
 
         builder.BindRuntimeType<SensitiveEmail, StringType>()
-           .AddTypeConverter<SensitiveEmail, string>(x => (string) x)
-           .AddTypeConverter<string, SensitiveEmail>(x => x.AsSensitiveEmail());
+            .AddTypeConverter<SensitiveEmail, string>(x => (string) x)
+            .AddTypeConverter<string, SensitiveEmail>(x => x.AsSensitiveEmail());
+
+        CursorKeySerializerRegistration.Register(
+            new SensitiveStringCursorKeySerializer(),
+            new SensitiveEmailCursorKeySerializer());
 
         return builder;
     }
