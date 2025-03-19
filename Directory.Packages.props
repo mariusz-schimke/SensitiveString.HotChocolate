@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <HotChocolateVersion>14.0.0</HotChocolateVersion>
+    <HotChocolateVersion>15.0.0</HotChocolateVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="SensitiveString" Version="0.1.5" />
