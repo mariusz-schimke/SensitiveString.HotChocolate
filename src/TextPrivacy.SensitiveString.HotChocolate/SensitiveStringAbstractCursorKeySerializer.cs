@@ -1,6 +1,6 @@
 using System.Reflection;
 using System.Text;
-using HotChocolate.Pagination.Serialization;
+using GreenDonut.Data.Cursors.Serializers;
 
 namespace TextPrivacy.SensitiveString.HotChocolate;
 
