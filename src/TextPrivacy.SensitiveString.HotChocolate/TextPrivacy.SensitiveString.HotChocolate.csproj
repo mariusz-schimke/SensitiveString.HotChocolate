@@ -18,7 +18,7 @@
 
       <Deterministic>true</Deterministic>
 
-      <Version>0.1.5</Version>
+      <Version>0.1.6</Version>
       <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
 
       <PackageId>SensitiveString.HotChocolate</PackageId>
@@ -42,7 +42,7 @@
       <RepositoryBranch>$(Branch)</RepositoryBranch>
       <RepositoryCommit>$(Commit)</RepositoryCommit>
 
-      <PackageReleaseNotes>Minimum dependency versions have been reduced.
+      <PackageReleaseNotes>Support for cursor pagination has been added.
 
 This is an initial package release. All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
 
@@ -60,9 +60,9 @@ See also https://github.com/$(Repository)/releases</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="HotChocolate.Pagination.Core" />
       <PackageReference Include="SensitiveString" />
       <PackageReference Include="HotChocolate.Data" />
+      <PackageReference Include="HotChocolate.Pagination.Core" />
       <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
       <PackageReference Include="SauceControl.InheritDoc">
         <PrivateAssets>all</PrivateAssets>
