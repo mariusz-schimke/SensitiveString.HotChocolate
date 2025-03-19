@@ -1,13 +1,12 @@
 <Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <HotChocolateVersion>14.0.0</HotChocolateVersion>
+    <HotChocolateVersion>15.0.0</HotChocolateVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageVersion Include="SensitiveString" Version="0.1.5" />
     <PackageVersion Include="HotChocolate.Data" Version="$(HotChocolateVersion)" />
     <PackageVersion Include="HotChocolate.Diagnostics" Version="$(HotChocolateVersion)" />
-    <PackageVersion Include="HotChocolate.Pagination.Core" Version="$(HotChocolateVersion)" />
     <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="8.0.0" />
     <PackageVersion Include="SauceControl.InheritDoc" Version="2.0.2">
       <PrivateAssets>all</PrivateAssets>
