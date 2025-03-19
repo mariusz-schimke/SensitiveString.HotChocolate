@@ -60,6 +60,7 @@ See also https://github.com/$(Repository)/releases</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="HotChocolate.Pagination.Core" />
       <PackageReference Include="SensitiveString" />
       <PackageReference Include="HotChocolate.Data" />
       <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
