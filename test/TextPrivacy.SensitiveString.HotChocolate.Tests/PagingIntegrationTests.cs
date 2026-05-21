@@ -28,9 +28,8 @@ public class PagingIntegrationTests
         Assert.NotNull(executor.Schema);
     }
 
-    // Reproduces the admin-list scenario: cursor paging while sorting by a SensitiveString
-    // field forces HotChocolate to encode the sort key into the cursor via the registered
-    // ICursorKeySerializer. On HotChocolate 15 this path crashed; it must succeed on 16.
+    // Cursor paging while sorting by a SensitiveString field forces HotChocolate to encode
+    // the sort key into the cursor via the registered ICursorKeySerializer.
     [Fact]
     public async Task Paging_SortedBySensitiveStringKey_ProducesCursorsWithoutErrors()
     {
