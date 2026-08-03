@@ -42,7 +42,7 @@
       <RepositoryBranch>$(Branch)</RepositoryBranch>
       <RepositoryCommit>$(Commit)</RepositoryCommit>
 
-      <PackageReleaseNotes>Update HotChocolate dependencies to 16.0.7.
+      <PackageReleaseNotes>Update HotChocolate dependencies to 16.0.0.
 
 All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
 
