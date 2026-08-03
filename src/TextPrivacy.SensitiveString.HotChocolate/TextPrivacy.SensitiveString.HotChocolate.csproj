@@ -18,7 +18,7 @@
 
       <Deterministic>true</Deterministic>
 
-      <Version>0.1.7</Version>
+      <Version>0.1.8</Version>
       <IncludeSourceRevisionInInformationalVersion>true</IncludeSourceRevisionInInformationalVersion>
 
       <PackageId>SensitiveString.HotChocolate</PackageId>
@@ -26,7 +26,7 @@
       <Product>SensitiveString.HotChocolate</Product>
       <Description>This package extends SensitiveString to integrate it with HotChocolate so it can be used in inputs and responses.</Description>
       <Authors>Mariusz Schimke</Authors>
-      <Copyright>Copyright © 2024-2025 Mariusz Schimke</Copyright>
+      <Copyright>Copyright © 2024-2026 Mariusz Schimke</Copyright>
       <PackageTags>sensitive strings privacy graphql hotchocolate</PackageTags>
 
       <PackageProjectUrl>https://github.com/$(Repository)</PackageProjectUrl>
@@ -42,9 +42,9 @@
       <RepositoryBranch>$(Branch)</RepositoryBranch>
       <RepositoryCommit>$(Commit)</RepositoryCommit>
 
-      <PackageReleaseNotes>Update HotChocolate dependencies to 15.0.0.
+      <PackageReleaseNotes>Update HotChocolate dependencies to 16.0.0.
 
-This is an initial package release. All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
+All comments and suggestions are warmly welcomed and encouraged to be reported as issues on GitHub. Your input is highly valued to help refine and improve this offering.
 
 See also https://github.com/$(Repository)/releases</PackageReleaseNotes>
     </PropertyGroup>
